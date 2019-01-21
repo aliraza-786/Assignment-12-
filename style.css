@@ -1,0 +1,89 @@
+
+
+table{
+    border: 2px solid black;
+    width: 90%;
+}
+tr , th , td{
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+    height: 30px;
+    text-align: center;
+}
+#createProduct{
+    margin: 10px;
+    width: 130px;
+    height: 40px;
+    background-color: blue;
+    border-color: rgb(41, 41, 221);
+    color: white;
+    border-radius: 6px;
+}
+#btn{
+    text-align: center;
+    display: none;
+}
+#btn1{
+    background-color: rgb(39, 167, 209);
+    border-color: rgb(80, 154, 179);
+    height: 25px;
+    width: 80px;
+    color: white;
+    border-radius: 5px;
+}
+#btn2{
+    background-color: blue;
+    border-color: rgb(36, 36, 221);
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+}
+#btn3{
+    background-color: red;
+    border-color: red;
+    height: 25px;
+    width: 65px;
+    color: white;
+    border-radius: 5px;
+}
+#myDIV{
+    display: none;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+}
+input , textarea{
+    margin: 3px;
+    padding: 10px;
+    width: 150px;
+    height: auto;
+}
+#submit{
+    background-color: rgb(51, 163, 51);
+    border-color: rgb(57, 155, 57);
+    border-radius: 5px;
+    color: white;
+}
+#edit{
+    display: none;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+}
+#read{
+    display: none;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+}
+#close{
+    background-color: red;
+    border-color: rgb(211, 29, 29);
+    color: white;
+    border-radius: 5px;
+}

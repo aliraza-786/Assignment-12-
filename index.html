@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Read Products</h1>
+    <button id="createProduct" onclick="add()">Create Product</button>
+
+    <!-- This Div Is For Add Data  -->
+
+    <div id="myDIV">
+            <input type="text" id="name" placeholder="Name"/>
+            <textarea id="dis" placeholder="Description" ></textarea>
+            <input type="number" id="price" placeholder="Price" />
+            <input type="text" id="category" placeholder="Category"/>
+            <input type="submit" id="submit" onclick="addRow()"/>
+        </div>
+
+        <!-- This Div Is For Edit Or Updtae Data -->
+
+        <div id="edit">
+            <form action="javascript:void(0);" id="saveEdit" onsubmit="saveEdit()" >
+                <input type="text" id="edit-name" />
+                <textarea id="edit-dis" ></textarea>
+                <input type="number" id="edit-price" />
+                <input type="text" id="edit-category" />
+                <input type="submit" value="Update" id="submit"/> 
+                <input type="button" onclick="CloseInput()" value="Close" id="close"/>
+            </form>
+        </div>
+
+            <!-- This Div Is For Read Data -->
+            
+        <div id="read">
+            <form form action="javascript:void(0);">
+                <input type="text" id="read-name" readonly/>
+                <textarea id="read-dis" readonly></textarea>
+                <input type="number" id="read-price" readonly/>
+                <input type="text" id="read-category" readonly/>
+
+                <input type="button" onclick="CloseInput()" value="Close" id="close"/>
+            </form>
+        </div>
+
+        <!-- Data Fetch -->
+        <!-- <p id="product"></p> -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+
+
+        <tbody id="products">
+        </tbody>
+
+    </table>
+
+
+
+        <!-- Js File -->
+    <script src="jScript.js"></script>
+</body>
+</html>
